@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    content 
+        h4= text
+        if hint
+            i Hint: #{hint}  
+        br
+        a(href=`/cards/${id}?side=${sidenya}`) #{SideToDisplay} 
+        br
+        a(href="/cards") Soal baru
+        br
+        form(action="/goodbye", method="POST")
+         input(type="submit" value="Log out")
+        //- ul
+        //- each color in colors
+        //-     li= color
+        //- table
+        //-     thead
+        //-         tr  
+        //-             td Nama
+        //-             td umur
+        //-     tbody
+        //-         tr
+        //-             td Joni
+        //-             td 12
+        //-         tr 
+        //-             td gudel
+        //-             td 15
