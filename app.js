@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser') // menamabahkan library cookie-par
 const mainRoutes = require ('./routes/index.js')//memanggil index.js dari folder routes
 const cardsRoutes = require ('./routes/cards.js')// memanggil card.js dari folder routes
 
-const port =14042 // mendeklarasikan bahwa port adalah 14042
+const port =16169 // mendeklarasikan bahwa port adalah 14042
 
 app.use(bodyParser.urlencoded({extended:false})) //menjalankan fungsi body parser untuk mengencoded url
 app.use(cookieParser())// menjalankan fungsi cookieParser
